@@ -1,0 +1,14 @@
+# Ignore all following
+.DS_Store
+node_modules
+uploads
+upgrade
+plugins/*
+themes/*
+
+# Git track
+!themes/proj
+!plugins/jh-menu
+!plugins/jh-geut-recipe-card
+!plugins/jh-geut-award
+

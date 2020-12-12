@@ -3,12 +3,11 @@
 node_modules
 uploads
 upgrade
+ai1wm-backups
 plugins/*
 themes/*
 
 # Git track
 !themes/proj
-!plugins/jh-menu
-!plugins/jh-geut-recipe-card
-!plugins/jh-geut-award
+!plugins/jh-menu-items
 

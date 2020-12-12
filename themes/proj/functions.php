@@ -104,6 +104,9 @@ if ( ! function_exists( 'proj_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'proj_setup' );
 
+// Get Function-admin.php
+require get_template_directory() . '/inc/function-admin.php';
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -180,25 +183,25 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 function randCat() {
 
-		$var = rand( 10, 30 );
+	$var = rand( 10, 30 );
 
-		if ( ( $var >= 10 ) && ( $var <= 12 ) ) {
-			$var = 'art';
-		} elseif ( ( $var >= 13 ) && ( $var <= 15 ) ) {
-			$var = 'people';
-		} elseif ( ( $var >= 16 ) && ( $var <= 18 ) ) {
-			$var = 'nature';
-		} elseif ( ( $var >= 19 ) && ( $var <= 21 ) ) {
-			$var = 'random';
-		}  elseif ( ( $var >= 22 ) && ( $var <= 24 ) ) {
-			$var = 'cars';
-		} elseif ( ( $var >= 15 ) && ( $var <= 27 ) ) {
-			$var = 'technology';
-		} elseif ( ( $var >= 28 ) && ( $var <= 30 ) ) {
-			$var = 'landscapes';
-		}
+	if ( ( $var >= 10 ) && ( $var <= 12 ) ) {
+		$var = 'art';
+	} elseif ( ( $var >= 13 ) && ( $var <= 15 ) ) {
+		$var = 'people';
+	} elseif ( ( $var >= 16 ) && ( $var <= 18 ) ) {
+		$var = 'nature';
+	} elseif ( ( $var >= 19 ) && ( $var <= 21 ) ) {
+		$var = 'random';
+	}  elseif ( ( $var >= 22 ) && ( $var <= 24 ) ) {
+		$var = 'cars';
+	} elseif ( ( $var >= 15 ) && ( $var <= 27 ) ) {
+		$var = 'technology';
+	} elseif ( ( $var >= 28 ) && ( $var <= 30 ) ) {
+		$var = 'landscapes';
+	}
 
-		echo $var;
+	echo $var;
 }
 
 function randNum() {
